@@ -31,5 +31,11 @@ module RailsPreset
     config.generators.system_tests = nil
     config.i18n.default_locale = :ja
     config.time_zone = 'Tokyo'
+    config.generators do |g|
+      g.assets false
+      g.javascripts false
+      g.helper false
+      g.test_framework false
+    end
   end
 end
